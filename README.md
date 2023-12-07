@@ -40,6 +40,13 @@ Since there are so few requirements, and they are all necessary for basic functi
 **Name**
 - `first_name`: str
 - `last_name`: str
+
+**Address**
+- `country`: str
+- `state`: str
+- `city`: str
+- `street_address`: str
+- `post_code`: str
   
 **User**
 - `name`: vector
