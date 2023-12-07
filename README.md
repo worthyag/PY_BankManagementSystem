@@ -46,6 +46,7 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `authenticateAccount()`: void
 - `createAccount()`: void
 - `closeAccount()`: void
+- `number_of_accounts`: double
 
 **Account**
 - `user_id`: double
