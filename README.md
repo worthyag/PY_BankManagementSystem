@@ -37,6 +37,10 @@
 Since there are so few requirements, and they are all necessary for basic functionality, all of them will be implemented (they are all must-haves).
 
 ## 3.1 Classes and Modules
+**Name**
+- `first_name`: str
+- `last_name`: str
+  
 **User**
 - `name`: vector
 - `id`: double
