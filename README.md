@@ -41,6 +41,7 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `name`: vector
 - `id`: double
 - `email`: str
+- `dob`: date
 
 **Bank**
 - `authenticateAccount()`: void
