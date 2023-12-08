@@ -3,13 +3,14 @@
    - Prompt: Develop a console-based application that simulates a basic bank management system. This can involve classes, inheritance, and file handling for storing customer data.
  ***
  **Table of Contents**
- - [1 The Design Problem](#1-the-design-problem)
- - [2 Requirements](#2-requirements)
- 	-  [2.1 Functional Requirements](#21-functional-requirements)
- 	-  [2.2 Non-Functional Requirements](#22-non-functional-requirements)
- 	-  [2.3 Restrictions](#23-restrictions)
--  [3 Categorising and Prioritising Requirements](#3-categorising-and-prioritising-requirements)
-	-  [3.1 Classes and Modules](#31-classes-and-modules)
+- [Bank Management System](#bank-management-system)
+- [1 The Design Problem](#1-the-design-problem)
+- [2 Requirements](#2-requirements)
+	- [2.1 Functional Requirements](#21-functional-requirements)
+	- [2.2 Non-Functional Requirements](#22-non-functional-requirements)
+	- [2.3 Restrictions](#23-restrictions)
+- [3 Categorising and Prioritising Requirements](#3-categorising-and-prioritising-requirements)
+	- [3.1 Classes and Modules](#31-classes-and-modules)
  ***
  # 1 The Design Problem
  Develop a console-based application that simulates a basic bank management system. This can involve classes, inheritance, and file handling for storing customer data. The application should allow users to log in and out of their account (I can store data via `csv` files). New users can sign up for an account- all users info will be stored in a `csv` or `txt` file. Users can view their balance deposit money, withdraw money, and also send/transfer money to other users (as long as they have their account number). They can view their information and modify it. Users can also close their account.
@@ -73,6 +74,7 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `transferMoney()`: void
 -  `viewAccountInfo()`: void
 -  `updateAccountInfo()`: void
+-  `generateAccountNumber()`: double
 
 **Display**
 - `welcomeMessage()`: void
