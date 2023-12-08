@@ -6,9 +6,9 @@ class Display:
         print("Welcome to Worthy Bank.")
 
     def display_menu(self) -> None:
-        print("Worthy Bank" /
-              "==============" /
-              "1. Login")
+        print("\n   Menu \
+              \n============ \
+              \n1. Login")
 
     def start_bank(self) -> None:
         self.welcome_message()
