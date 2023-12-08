@@ -1,5 +1,5 @@
-# C++ Bank Management System
-**C++ Bank Management System**
+# Bank Management System
+**Bank Management System**
    - Prompt: Develop a console-based application that simulates a basic bank management system. This can involve classes, inheritance, and file handling for storing customer data.
  ***
  **Table of Contents**
