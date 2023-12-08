@@ -1,8 +1,8 @@
 class Account:
-    def __init__(self, id) -> None:
-        self.user_id = id
-        self.account_number = self.generateAccountNumber()
-        self.balance = 0
+    def __init__(self, id: str) -> None:
+        self.user_id: str = id
+        self.account_number: str = self.generateAccountNumber()
+        self.balance: float = 0
 
     def generateAccountNumber(self) -> str:
         pass

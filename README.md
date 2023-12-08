@@ -48,10 +48,10 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `city`: string
 - `street_address`: string
 - `post_code`: string
-- `user_id`: double
+- `user_id`: string
   
 **User**
-- `id`: double
+- `id`: string
 - `email`: string
 - `dob`: date
 - `address`: object
@@ -65,7 +65,7 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `number_of_accounts`: double
 
 **Account**
-- `user_id`: double
+- `user_id`: string
 - `account_number`: string
 - `balance`: float
 - `viewBalance()`: void
