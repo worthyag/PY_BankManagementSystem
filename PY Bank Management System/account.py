@@ -1,3 +1,6 @@
+from user import User
+
+
 class Account:
     def __init__(self, id: str) -> None:
         self.user_id: str = id

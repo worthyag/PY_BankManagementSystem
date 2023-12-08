@@ -57,12 +57,14 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `address`: object
 - `username`: string
 - `password`: string
+- `generateId()`: string
 
 **Bank**
 - `authenticateAccount()`: void
 - `createAccount()`: void
 - `closeAccount()`: void
 - `number_of_accounts`: double
+- `generateAccountNumber()`: string
 
 **Account**
 - `user_id`: string
