@@ -39,24 +39,24 @@ Since there are so few requirements, and they are all necessary for basic functi
 
 ## 3.1 Classes and Modules
 **Name**
-- `first_name`: str
-- `last_name`: str
+- `first_name`: string
+- `last_name`: string
 
 **Address**
-- `country`: str
-- `state`: str
-- `city`: str
-- `street_address`: str
-- `post_code`: str
+- `country`: string
+- `state`: string
+- `city`: string
+- `street_address`: string
+- `post_code`: string
 - `user_id`: double
   
 **User**
 - `id`: double
-- `email`: str
+- `email`: string
 - `dob`: date
 - `address`: object
-- `username`: str
-- `password`: str
+- `username`: string
+- `password`: string
 
 **Bank**
 - `authenticateAccount()`: void
@@ -66,7 +66,7 @@ Since there are so few requirements, and they are all necessary for basic functi
 
 **Account**
 - `user_id`: double
-- `account_number`: double
+- `account_number`: string
 - `balance`: float
 - `viewBalance()`: void
 - `depositMoney()`: void
@@ -74,7 +74,7 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `transferMoney()`: void
 -  `viewAccountInfo()`: void
 -  `updateAccountInfo()`: void
--  `generateAccountNumber()`: double
+-  `generateAccountNumber()`: string
 
 **Display**
 - `welcomeMessage()`: void
