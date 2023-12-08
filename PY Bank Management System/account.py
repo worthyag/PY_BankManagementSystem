@@ -1,26 +1,26 @@
 class Account:
     def __init__(self, id: str) -> None:
         self.user_id: str = id
-        self.account_number: str = self.generateAccountNumber()
+        self.account_number: str = self.generate_account_number()
         self.balance: float = 0
 
-    def generateAccountNumber(self) -> str:
+    def generate_account_number(self) -> str:
         pass
 
-    def viewBalance(self) -> None:
+    def view_balance(self) -> None:
         pass
 
-    def depositMoney(self) -> None:
+    def deposit_money(self) -> None:
         pass
 
-    def withdrawMoney(self) -> None:
+    def withdraw_money(self) -> None:
         pass
 
-    def transferMoney(self) -> None:
+    def transfer_money(self) -> None:
         pass
 
-    def viewAccountInfo(self) -> None:
+    def view_account_info(self) -> None:
         pass
 
-    def updateAccountInfo(self) -> None:
+    def update_account_info(self) -> None:
         pass
