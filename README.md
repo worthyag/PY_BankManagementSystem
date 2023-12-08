@@ -47,11 +47,13 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `city`: str
 - `street_address`: str
 - `post_code`: str
+- `user_id`: double
   
 **User**
 - `id`: double
 - `email`: str
 - `dob`: date
+- `address`: object
 - `username`: str
 - `password`: str
 
