@@ -25,7 +25,16 @@ class User(Name):
                 else:
                     self.addresses.append(entry)
                     entry.user_id = self.id
+        else:
+            raise Exception("Invalid address...")
 
     def generate_id(self) -> str:
         # TODO: Write algorithm to generate an ID.
         return "1234"
+
+    def add_address(self, address) -> None:
+        if isinstance(address, Address):
+            self.addresses.append(address)
+            address.user_id = self.id
+        else:
+            raise Exception("Invalid address...")

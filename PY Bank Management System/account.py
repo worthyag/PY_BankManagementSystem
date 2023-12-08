@@ -40,21 +40,35 @@ def test():
 
     print(user.addresses[0].country)
     print(user.addresses[1].country)
-
+    print("-----------------------------------")
     print(user.addresses[0].state)
     print(user.addresses[1].state)
-
+    print("-----------------------------------")
     print(user.addresses[0].city)
     print(user.addresses[1].city)
-
+    print("-----------------------------------")
     print(user.addresses[0].street_address)
     print(user.addresses[1].street_address)
-
+    print("-----------------------------------")
     print(user.addresses[0].post_code)
     print(user.addresses[1].post_code)
-
+    print("-----------------------------------")
     print(user.addresses[0].user_id)
     print(user.addresses[1].user_id)
+    print("-----------------------------------")
+
+    address3 = Address("Canada", "n/a", "Montreal",
+                       "77 horse pickens", "XCV 67K")
+
+    user.add_address(address3)
+    print(user.addresses[2].user_id)
+    print(user.addresses[2].street_address)
+    print(user.addresses[2].city)
+    print(user.addresses[2].post_code)
+    print(user.addresses[2].state)
+    print(user.addresses[2].country)
+
+    # user.add_address("address3")  # Exception works
 
 
 # test()
