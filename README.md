@@ -49,7 +49,6 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `post_code`: str
   
 **User**
-- `name`: vector
 - `id`: double
 - `email`: str
 - `dob`: date
