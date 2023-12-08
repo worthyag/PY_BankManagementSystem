@@ -1,5 +1,5 @@
-import display
+from display import Display
 
 if __name__ == "__main__":
-    start_bank = display.Display()
-    start_bank.start_bank()
+    display = Display()
+    display.start_bank()

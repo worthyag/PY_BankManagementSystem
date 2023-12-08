@@ -6,4 +6,4 @@ class Address:
         self.city: str = city
         self.street_address: str = street_address
         self.post_code: str = post_code
-        self.user_id: str = user_id
+        self.user_id: str = None
