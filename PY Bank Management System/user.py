@@ -21,7 +21,7 @@ class User(Name):
         elif isinstance(address, list):
             for entry in address:
                 if not isinstance(entry, Address):
-                    raise Exception("Invalid address.")
+                    raise Exception("Invalid address...")
                 else:
                     self.addresses.append(entry)
                     entry.user_id = self.id
