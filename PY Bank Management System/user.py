@@ -15,8 +15,17 @@ class User(Name):
         self.username: str
         self.password: str
 
-        # if isinstance(address, Address):
-        #     self.addresses.append(address)
-        #     address.
+        if isinstance(address, Address):
+            self.addresses.append(address)
+            address.user_id = self.id
+        elif isinstance(address, list):
+            for entry in address:
+                if not isinstance(entry, Address):
+                    raise Exception("Invalid address.")
+                else:
+                    self.addresses.append(entry)
+                    entry.user_id = self.id
+
     def generate_id(self) -> str:
-        pass
+        # TODO: Write algorithm to generate an ID.
+        return "1234"
