@@ -79,3 +79,4 @@ Since there are so few requirements, and they are all necessary for basic functi
 **Display**
 - `welcomeMessage()`: void
 - `displayMenu()`: void
+- `startBank()`: void
