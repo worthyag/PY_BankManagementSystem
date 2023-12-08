@@ -3,7 +3,7 @@ class Display:
         pass
 
     def welcome_message(self) -> None:
-        pass
+        print("Welcome to Worthy Bank.")
 
     def display_menu(self) -> None:
         pass
