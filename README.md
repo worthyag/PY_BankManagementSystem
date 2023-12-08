@@ -53,6 +53,8 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `id`: double
 - `email`: str
 - `dob`: date
+- `username`: str
+- `password`: str
 
 **Bank**
 - `authenticateAccount()`: void
