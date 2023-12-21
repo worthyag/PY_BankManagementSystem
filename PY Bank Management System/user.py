@@ -52,7 +52,7 @@ class User(Name):
 if __name__ == "__main__":
     address = Address("UK", "England", "London", "24 church road", "N7 4HJ")
     newUser = User("Worthy", "Albright",
-                   "worthy@email.com", datetime.date,
+                   "worthy@email.com", datetime(2023, 11, 2),
                    address)
 
-    print(newUser.id)
+    print(newUser.date_of_birth)

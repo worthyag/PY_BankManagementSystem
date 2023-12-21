@@ -8,7 +8,8 @@ class Display:
     def display_menu(self) -> None:
         print("\n   Menu \
               \n============ \
-              \n1. Login")
+              \n1. Login \
+              \n2. Create an account")
 
     def start_bank(self) -> None:
         self.welcome_message()
