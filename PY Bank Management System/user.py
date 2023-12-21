@@ -16,8 +16,6 @@ class User(Name):
         self.email = email
         self.date_of_birth = dob
         self.addresses: list = []
-        self.username: str
-        self.password: str
 
         if isinstance(address, Address):
             self.addresses.append(address)

@@ -3,6 +3,8 @@ class Account:
         self.user_id: str = id
         self.account_number: str = self.generate_account_number()
         self.balance: float = 0.0
+        self.username: str
+        self.password: str
 
     def generate_account_number(self) -> str:
         pass
