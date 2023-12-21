@@ -6,6 +6,7 @@ class Bank:
         pass
 
     def create_account(self) -> None:
+        #TODO: Check that the generated ID is unique.
         pass
 
     def close_account(self) -> None:

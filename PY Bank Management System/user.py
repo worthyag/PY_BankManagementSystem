@@ -1,14 +1,15 @@
 from name import Name
 from address import Address
-import datetime
+from datetime import datetime
 import random
+import re
 
 # TODO: Need to comment my code.
 
 
 class User(Name):
     def __init__(self, first_name: str, last_name: str, email: str,
-                 dob: datetime.date, address) -> None:
+                 dob: datetime, address) -> None:
         super().__init__(first_name, last_name)
 
         self.id = self.generate_id()
@@ -32,10 +33,13 @@ class User(Name):
             raise Exception("Invalid address...")
 
     def generate_id(self) -> str:
-        # TODO: Write algorithm to generate an ID.
-        id = datetime.date
-        print(id)
-        return "1234"
+        # Using time and name to generate a unique id.
+        # The bank class must ensure that this id is truly unique, though
+        #  it is unlikely to not be.
+        id = str(datetime.now())
+        match = r"[-.:\s]"
+        id = f"{self.first_name[0]}{self.last_name[0]}{re.sub(match, "", id)}"
+        return id
 
     def add_address(self, address) -> None:
         if isinstance(address, Address):
@@ -46,4 +50,9 @@ class User(Name):
 
 
 if __name__ == "__main__":
-    User.generate_id()
+    address = Address("UK", "England", "London", "24 church road", "N7 4HJ")
+    newUser = User("Worthy", "Albright",
+                   "worthy@email.com", datetime.date,
+                   address)
+
+    print(newUser.id)
