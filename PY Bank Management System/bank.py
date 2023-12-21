@@ -122,6 +122,23 @@ class Bank:
             print("Account NOT created")
             return False
 
+        account = Account(user.id)
+        # Left of here, need to do the following:
+        """
+        - Generate a random account number (it can just go from 1 to
+        whatever). Since it needs to be 8 digits, the first user could
+        be 00000001, then 00000002 etc
+        - Create a username and password for the user.
+        - Add the info for the created user to a database / csv or txt file.
+        - Check that the generated ID is unique (compare to database).
+        - Write login logic.
+        - From there it gets easier, allow users to add money or withdraw money, transfer money to other users etc.
+        - Write the functionality to delete an account.
+        - With that complete the app will be mostly done, since it is a toy
+        bank management app.
+        - I could then consider turning the app into a GUI application.
+        """
+
         # TODO: Check that the generated ID is unique.
 
         # Get user to check and validate info at the end
