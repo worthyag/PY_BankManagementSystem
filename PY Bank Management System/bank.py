@@ -2,6 +2,7 @@ from account import Account
 from user import User
 from account import Account
 from datetime import date
+from address import Address
 
 
 class HelperFunctions:
@@ -9,6 +10,9 @@ class HelperFunctions:
         pass
 
     def generate_birthday(self):
+        print("Please enter your birthday.")
+        print("----------------------------")
+
         error_char = ""
 
         for i in range(3):
@@ -46,11 +50,32 @@ class HelperFunctions:
 
     def get_user_info(self):
         # Add input validation.
-        first_name = input("Please enter your first name > ")
-        last_name = input("Please enter your last name > ")
-        email = input("Please your email > ")
+        print("Please enter your name and email.")
+        print("---------------------------------")
+        first_name = input("First Name > ")
+        last_name = input("Last Name > ")
+        email = input("Email > ")
 
         return (first_name, last_name, email)
+
+    def get_address(self):
+        print("Please enter your current address...")
+        print("-------------------------------------")
+        country = input("Country > ")
+        state = input("State > ")
+        city = input("City > ")
+        street_address = input("Street Address > ")
+        post_code = input("Post Code > ")
+
+        address = Address(
+            country,
+            state,
+            city,
+            street_address,
+            post_code
+        )
+
+        return address
 
 
 class Bank:
@@ -68,9 +93,18 @@ class Bank:
         # to go with them.
         first_name, last_name, email = self.helper.get_user_info()
         birth_date = self.helper.generate_birthday()
+        address = self.helper.get_address()
 
-        print(first_name, last_name, email)
-        print(f"dob: {birth_date}")
+        user = User(
+            first_name,
+            last_name,
+            email,
+            birth_date,
+            address
+        )
+
+        print(user.id)
+        print(user.addresses[0].user_id)
 
         # Get user to check and validate info at the end
         # User input validation (check whether the name is long enough,

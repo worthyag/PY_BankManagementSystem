@@ -38,7 +38,8 @@ class User(Name):
         #  it is unlikely to not be.
         id = str(datetime.now())
         match = r"[-.:\s]"
-        id = f"{self.first_name[0]}{self.last_name[0]}{re.sub(match, "", id)}"
+        id = f"{self.first_name[0].capitalize()}{self.last_name[0].capitalize()}{
+            re.sub(match, "", id)}"
         return id
 
     def add_address(self, address) -> None:
