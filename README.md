@@ -85,6 +85,9 @@ Since there are so few requirements, and they are all necessary for basic functi
 - `displayMenu()`: void
 - `startBank()`: void
 
+  
+***Moved the username and password variables from the user to the account.**
+
 # 4 The Design
 ## 4.1 The UML Diagram
 ![UML diagram for the project](./UML.png)
