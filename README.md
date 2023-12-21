@@ -11,8 +11,8 @@
 	- [2.3 Restrictions](#23-restrictions)
 - [3 Categorising and Prioritising Requirements](#3-categorising-and-prioritising-requirements)
 	- [3.1 Classes and Modules](#31-classes-and-modules)
- - [4 The Design](#4-the-design)
- 	- [4.1 The UML Diagram](#41-the-uml-diagram)
+- [4 The Design](#4-the-design)
+	- [4.1 The UML Diagram](#41-the-uml-diagram)
  ***
  # 1 The Design Problem
  Develop a console-based application that simulates a basic bank management system. This can involve classes, inheritance, and file handling for storing customer data. The application should allow users to log in and out of their account (I can store data via `csv` files). New users can sign up for an account- all users info will be stored in a `csv` or `txt` file. Users can view their balance deposit money, withdraw money, and also send/transfer money to other users (as long as they have their account number). They can view their information and modify it. Users can also close their account.

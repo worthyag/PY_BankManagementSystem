@@ -71,4 +71,5 @@ def test():
     # user.add_address("address3")  # Exception works
 
 
-# test()
+if __name__ == "__main__":
+    test()

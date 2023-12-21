@@ -1,6 +1,7 @@
 from name import Name
 from address import Address
 import datetime
+import random
 
 # TODO: Need to comment my code.
 
@@ -32,6 +33,8 @@ class User(Name):
 
     def generate_id(self) -> str:
         # TODO: Write algorithm to generate an ID.
+        id = datetime.date
+        print(id)
         return "1234"
 
     def add_address(self, address) -> None:
@@ -40,3 +43,7 @@ class User(Name):
             address.user_id = self.id
         else:
             raise Exception("Invalid address...")
+
+
+if __name__ == "__main__":
+    User.generate_id()
