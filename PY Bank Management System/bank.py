@@ -88,23 +88,41 @@ class Bank:
         pass
 
     def create_account(self) -> None:
-        # TODO: Check that the generated ID is unique.
         # To create an account, a user must be generated and an account
         # to go with them.
         first_name, last_name, email = self.helper.get_user_info()
         birth_date = self.helper.generate_birthday()
         address = self.helper.get_address()
 
-        user = User(
-            first_name,
-            last_name,
-            email,
-            birth_date,
-            address
-        )
+        isValid = True if (input(f"Is the following information valid:\
+                        \n----------------------\
+                        \nFirst Name: {first_name}\
+                        \nLast Name: {last_name}\
+                        \nEmail: {email}\
+                        \nBirthday: {birth_date}\
+                        \nAddress: \n\t{address.street_address}\
+                        \n\t{address.city}\
+                        \n\t{address.state}\
+                        \n\t{address.country}\
+                        \n\t{address.post_code}\
+                        \n----------------------\
+                        \n Enter 'y' or 'n' > ")) in \
+            ['y', 'Y', 'yes', 'Yes'] else False
 
-        print(user.id)
-        print(user.addresses[0].user_id)
+        if isValid:
+            user = User(
+                first_name,
+                last_name,
+                email,
+                birth_date,
+                address
+            )
+            print("Account created")
+        else:
+            print("Account NOT created")
+            return False
+
+        # TODO: Check that the generated ID is unique.
 
         # Get user to check and validate info at the end
         # User input validation (check whether the name is long enough,

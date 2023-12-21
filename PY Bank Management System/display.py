@@ -14,3 +14,7 @@ class Display:
     def start_bank(self) -> None:
         self.welcome_message()
         self.display_menu()
+
+
+# Check whether False is returned from create account, if so, give
+# user the chance to start again, or to pick another option.
